@@ -1,18 +1,15 @@
 #!/usr/bin/env ruby
-require_relative '../lib/roman2decimal/start'
+require_relative '../lib/roman2decimal/roman_decimal'
 require_relative '../lib/roman2decimal/validation'
-require_relative '../lib/roman2decimal/realprov'
+require_relative '../lib/roman2decimal/decimal_roman'
 
 puts "Bem vindo ao conversor Roman2Decimal"
 loop do
   puts "\nEntre com o número em algoritmos romanos:"
   input = gets.chomp.upcase
-  div_algorismo = input.split("")
   if Validation.valid_order(input)
-    puts "O número romano #{input} será convertido, aguarde..."
-    Start.conversor(div_algorismo)
-    puts 
-  break
+    RomanDecimal.valid(input)
+    break
   else
     puts "Poxa, o valor está incorreto. Tente novamente"
   end
