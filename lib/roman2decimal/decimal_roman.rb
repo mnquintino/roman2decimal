@@ -1,4 +1,4 @@
-class Realprov
+class DecimalRoman
 
   # attr_accessor :output
 
