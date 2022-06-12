@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require_relative '../lib/roman2decimal/start'
 require_relative '../lib/roman2decimal/validation'
+require_relative '../lib/roman2decimal/realprov'
 
 puts "Bem vindo ao conversor Roman2Decimal"
 loop do
