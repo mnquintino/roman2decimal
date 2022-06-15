@@ -22,7 +22,6 @@ class DecimalRoman
     ten(rest[1], dez)
     one(rest[0], unid)
     result = mil + cent + dez + unid
-    puts "O resultado é #{result}"
   end
 
   def self.thousand(rest, mil)
@@ -72,7 +71,7 @@ class DecimalRoman
   end
 
   def self.one(rest, unid)
-    if rest == nil
+    if rest.nil?
       unid
     elsif rest < 4 
       three_times(unid, rest, "I")
