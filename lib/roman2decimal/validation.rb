@@ -1,6 +1,5 @@
 class Validation
 
-  
   unic = ["V", "L", "D"]
   groups = ["I", "X", "C", "M"]
   one = 1

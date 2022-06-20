@@ -82,7 +82,7 @@ class DecimalRoman
       rest = rest - 5
       three_times(unid, rest, "I")
     elsif rest == 9
-      four_or_nine(unid, "XI")
+      four_or_nine(unid, "IX")
     else
       unid
     end

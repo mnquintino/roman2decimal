@@ -8,7 +8,8 @@ loop do
   puts "\nEntre com o número em algoritmos romanos:"
   input = gets.chomp.upcase
   if Validation.valid_order(input)
-    RomanDecimal.valid(input)
+    output = RomanDecimal.valid(input)
+    puts "O resultado é #{output}"
     break
   else
     puts "Poxa, o valor está incorreto. Tente novamente"
