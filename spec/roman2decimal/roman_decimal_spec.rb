@@ -15,30 +15,61 @@ describe RomanDecimal do
   end
   
   describe '.conversor' do
-    context 'when the input is valid' do
+    context 'when the input is M' do
       let(:input) { ["M"] }
-      let(:output) { 0 }
       subject {RomanDecimal.conversor(input)}
-      it 'change the output value by 3999' do
-        expect{ output += 1000 }.to change {output}.by(1000)
+      it 'returns 1000' do
+        expect(subject).to eq(1000)
+      end
+    end
+    context 'when the input is C' do
+      let(:input) { ["C"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 100' do
+        expect(subject).to eq(100)
+      end
+    end
+    context 'when the input is D' do
+      let(:input) { ["D"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 500' do
+        expect(subject).to eq(500)
+      end
+    end
+    context 'when the input is L' do
+      let(:input) { ["L"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 50' do
+        expect(subject).to eq(50)
+      end
+    end
+    context 'when the input is X' do
+      let(:input) { ["X"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 10' do
+        expect(subject).to eq(10)
+      end
+    end
+    context 'when the input is V' do
+      let(:input) { ["V"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 5' do
+        expect(subject).to eq(5)
+      end
+    end
+    context 'when the input is I' do
+      let(:input) { ["I"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 1' do
+        expect(subject).to eq(1)
+      end
+    end
+    context 'when the input is IX' do
+      let(:input) { ["X", "I"] }
+      subject {RomanDecimal.conversor(input)}
+      it 'returns 11' do
+        expect(subject).to eq(11)
       end
     end
   end
-
-  # context '' do
-  #   it '' do
-  #     expect(actual).to be_truthy    # passes if actual is truthy (not nil or false)
-  #     expect(actual).to be true      # passes if actual == true
-  #     expect(actual).to be_falsey    # passes if actual is falsy (nil or false)
-  #     expect(actual).to be false     # passes if actual == false
-  #   end
-    
-  # end
-  # context '.conversor' do
-  #   it do
-  #     expect { a += 1 }.to change { a }.by(1)
-
-      
-  #   end
-  # end
 end
