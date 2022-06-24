@@ -13,6 +13,7 @@ No console, dentro na pasta bin/ execute: ruby begin.rb - o programa será execu
 ## Regras para a entrada de números romanos
 Os algorismos permitidos e seus respectivos valores decimais, são:
 
+![Captura de tela de 2022-06-24 18-14-48](https://user-images.githubusercontent.com/87029318/175695666-1c14ee0a-016f-4256-9d3a-9dc6e3fa1c50.png)
 
 Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals)
 
@@ -24,16 +25,16 @@ O maior número que pode ser representado em algorismos romanos é o MMMCMXCIX (
 
 
 ## User Stories
- -[] Usuário entra com um número romano
- -[] Como resposta é mostrado ao usuário o número decimal (base 10)
- -[] Se o usuário entrar com um valor incorreto, aparece um alerta o sistema requisita novamente que entre com um número romano válido.
- -[] Usuário é capaz de escolher entre a conversão de romano para decimal ou de decimal para romano (caminho inverso).
- -[] O usuário pode realizar várias conversões, até que solicite a saída do sistema (digitando exit).
+ -   [ ] Usuário entra com um número romano
+ -   [ ] Como resposta é mostrado ao usuário o número decimal (base 10)
+ -   [ ] Se o usuário entrar com um valor incorreto, aparece um alerta o sistema requisita novamente que entre com um número romano válido.
+ -   [ ] Usuário é capaz de escolher entre a conversão de romano para decimal ou de decimal para romano (caminho inverso).
+ -   [ ] O usuário pode realizar várias conversões, até que solicite a saída do sistema (digitando exit).
 
 
 ## Em construção
--[] Testes unitários;
--[] Documentação: regras da estrutura dos números romanos: ordem correta, valor máximo e minimo.
+-   [ ] Testes unitários;
+-   [ ] Documentação: regras da estrutura dos números romanos: ordem correta, valor máximo e minimo.
 
 ## Nice to Have
--[] Gem para ser usada pelo usuário;
+-   [ ] Gem para ser usada pelo usuário;
