@@ -47,3 +47,8 @@ O maior número que pode ser representado em algorismos romanos é o `MMMCMXCIX`
 
 ## Nice to Have
 -   [ ] Gem para ser usada pelo usuário;
+
+### Gems utilizadas nesse projeto
+- RSpec;
+- Pry;
+- Colorize.
