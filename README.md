@@ -10,6 +10,7 @@ Se trata de um conversor de número romanos em decimais (base 10)
 ## Em construção
 - Usuário é capaz de escolher entre a conversão de romano para decimal ou de decimal para romano (caminho inverso).
 - O usuário pode realizar várias conversões, até que solicite a saída do sistema (digitando exit).
+- Documentação: regras da estrutura dos números romanos: ordem correta, valor máximo e minimo.
 
 ## Nice to Have
 Gem pronta para ser usada
