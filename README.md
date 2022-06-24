@@ -1,14 +1,20 @@
 # Roman to Decimal
-Esse projeto é uma versão (adaptada para desktop/console) [deste projeto](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Roman-to-Decimal-Converter.md#user-stories)
-Se trata de um conversor de número romanos em decimais (base 10)
-Também é possível converter números decimais para romanos (entre 1 e 3999)
+Esse projeto é uma versão (adaptada para desktop/console) [deste projeto](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Roman-to-Decimal-Converter.md#user-stories).
+
+Se trata de um conversor de número romanos em decimais (base 10).
+
+Também é possível converter números decimais para romanos (entre 1 e 3999).
+
 O usuário pode fazer inúmeras conversões em sequência. Se desejar encerrar a execução, é necessário digitar EXIT.
 
 ## Como usar
 É necessário tem o ruby instalado na sua máquina;
+
 Copie o repositório para seu local;
-Execute: bundle install para instalar as gems necessárias;
-No console, dentro na pasta bin/ execute: ruby begin.rb - o programa será executado.
+
+Execute: `bundle install` para instalar as gems necessárias;
+
+No console, dentro na pasta bin/ execute: `ruby begin.rb` - o programa será executado.
 
 ## Regras para a entrada de números romanos
 Os algorismos permitidos e seus respectivos valores decimais, são:
