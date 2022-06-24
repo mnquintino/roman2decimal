@@ -1,15 +1,5 @@
 class DecimalRoman
-
-  # attr_accessor :output
-
-  # def initialize(output)
-  #   @unid = ""
-  #   @dez = ""
-  #   @cent = ""
-  #   @mil = ""
-  #   @output = output
-  # end
-  
+ 
   def self.main_method(output)
     unid = ""
     dez = ""
@@ -101,19 +91,3 @@ class DecimalRoman
   end
 
 end
-
-# puts "Bem vindo ao conversor Decimal2Roman"
-# loop do
-#   puts "\nEntre com o número (o maior número possível é 3999):"
-#   input = gets.chomp
-#   case input
-#   when /^\d+$/
-#     output = input.to_i
-#     # Realprov.new(output)
-#     Realprov.main_method(output)
-#     puts "ok"
-#   break
-#   else
-#     puts "Poxa, o valor está incorreto. Tente novamente"
-#   end
-# end
