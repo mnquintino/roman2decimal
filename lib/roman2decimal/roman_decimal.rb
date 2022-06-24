@@ -6,7 +6,6 @@ class RomanDecimal
   valid = [I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000]
 
   def self.valid(input)
-    # binding.pry
     div_algorismo = input.split("")
     output_1 = conversor(div_algorismo)
     output_2 = DecimalRoman.main_method(output_1)
