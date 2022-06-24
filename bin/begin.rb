@@ -1,16 +1,23 @@
 #!/usr/bin/env ruby
 require_relative '../lib/roman2decimal/roman_decimal'
 require_relative '../lib/roman2decimal/validation'
-require_relative '../lib/roman2decimal/decimal_roman'
+require_relative '../lib/roman2decimal/history'
 require 'colorize'
 
 puts "Bem vindo ao Conversor".colorize(:color => :light_cyan, :background => :black).bold
+History.delete
 loop do
   puts "\nEscolha qual conversão deseja fazer: \n1 : Romano-Decimal\n2 : Decimal-Romano \n(Exit para sair)".colorize(:light_cyan)
   choise = gets.chomp.upcase
   case choise
   when 'EXIT'
-    puts "Obrigada, até mais".colorize(:color => :light_cyan, :background => :black).bold
+    if File.empty?("out.txt")
+      puts "\nVocê não realizou nenhuma conversão."
+    else
+      puts "\nVocê solicitou as seguintes conversões:\n\n"
+      puts History.read
+    end
+    puts "\nObrigada, até mais!".colorize(:color => :light_cyan, :background => :black).bold
     break
   when '1'
     loop do
@@ -21,6 +28,8 @@ loop do
         puts "Conversão de Romano para Decimal:".colorize(:green).bold
         puts "Romano:" + input.colorize(:green)
         puts "Decimal: #{output}.".colorize(:green).bold
+        text = "Romano #{input} - Decimal #{output} \n"
+        History.create_and_write(text)
         break
       else
         puts "Poxa, o valor está incorreto. Tente novamente".colorize(:red)
@@ -37,6 +46,8 @@ loop do
         puts "Conversão de Decimal para Romano:".colorize(:green).bold
         puts "Decimal: #{input}".colorize(:black).bold
         puts "Romano: #{output}".colorize(:green).bold
+        text = "Decimal #{input} - Romano #{output} \n"
+        History.create_and_write(text)
         break
       end
     end
