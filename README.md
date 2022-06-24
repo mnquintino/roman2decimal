@@ -24,9 +24,12 @@ Os algorismos permitidos e seus respectivos valores decimais, são:
 Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals)
 
 A ordem precisa ser respeitada, ou será um valor inválido.
+
 Por exemplo, III é o número 3, mas IIIII não é a representação correta do valor 5 (correto V).
-Outro ponto são os algorismos que representam 5, 50 e 500, que só podem aparecer uma vez na representação (V, L, D), diferente dos demais números que podem aparecer até quatro vezes (como o caso do MMMCM - 3900).
-O maior número que pode ser representado em algorismos romanos é o MMMCMXCIX (3999) e o menor é I (1). O número 0 não possui uma representação em algorismos romanos.
+
+Outro ponto são os algorismos que representam 5, 50 e 500, que só podem aparecer uma vez na representação `(V, L, D)`, diferente dos demais números que podem aparecer até quatro vezes (como o caso do `MMMCM` - 3900).
+
+O maior número que pode ser representado em algorismos romanos é o `MMMCMXCIX` (3999) e o menor é `I` (1). O número 0 não possui uma representação em algorismos romanos.
 
 
 
