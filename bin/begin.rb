@@ -5,7 +5,6 @@ require_relative '../lib/roman2decimal/history'
 require 'colorize'
 
 puts "Bem vindo ao Conversor".colorize(:color => :light_cyan, :background => :black).bold
-History.delete
 loop do
   puts "\nEscolha qual conversão deseja fazer: \n1 : Romano-Decimal\n2 : Decimal-Romano \n(Exit para sair)".colorize(:light_cyan)
   choise = gets.chomp.upcase
@@ -16,6 +15,7 @@ loop do
     else
       puts "\nVocê solicitou as seguintes conversões:\n\n"
       puts History.read
+      History.delete
     end
     puts "\nObrigada, até mais!".colorize(:color => :light_cyan, :background => :black).bold
     break

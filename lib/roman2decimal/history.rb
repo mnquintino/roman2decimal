@@ -9,6 +9,6 @@ class History
   end
   
   def self.delete
-    File.open("out.txt", "w") {}
+    File.delete("out.txt") if File.exists? "out.txt"
   end
 end
