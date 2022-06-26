@@ -10,7 +10,7 @@ loop do
   choise = gets.chomp.upcase
   case choise
   when 'EXIT'
-    if File.empty?("out.txt")
+    if !File.exists?("out.txt")
       puts "\nVocê não realizou nenhuma conversão."
     else
       puts "\nVocê solicitou as seguintes conversões:\n\n"
