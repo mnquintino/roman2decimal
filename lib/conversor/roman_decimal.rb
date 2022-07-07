@@ -26,7 +26,7 @@ module Conversor
         when "D"
           output += D
         when "C"
-          if input[index + 1] == "M"
+          if input[index + 1] == "M" || input[index + 1] == "D"
             output -= C
           else
             output += C

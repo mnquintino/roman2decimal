@@ -5,8 +5,8 @@ module Conversor
 
     describe '.valid' do
       context 'when the input is valid' do
-        let(:input) { 'MMMCMXC' }
-        let(:output) { 3990 }
+        let(:input) { 'CD' }
+        let(:output) { 400 }
         subject {RomanDecimal.valid(input)}
         it 'returns the output' do
           expect(subject).to eq(output)
