@@ -13,19 +13,19 @@ module Conversor
         n = index + 1
         case letra
         when "M"
-          return false if !valid_m(input) 
+          valid_m(input) 
         when "D"
-          return false if !valid_d(input, n)
+          valid_d(input, n)
         when "C"
-          return false if !valid_c(input, n)
+          valid_c(input, n)
         when "L"
-          return false if !valid_l(input, n)
+          valid_l(input, n)
         when "X"
-          return false if !valid_x(input, n)
+          valid_x(input, n)
         when "V"
-          return false if !valid_v(input, n)
+          valid_v(input, n)
         when "I"
-          return false if !valid_i(input, n)
+          valid_i(input, n)
         else
           return false
         end
@@ -99,7 +99,7 @@ module Conversor
     end
 
     def self.valid_i(input, n)
-      if input.index("M") == n || input.index("D") == n || input.index("C") == n || input.index("L") == n || input.scan("IIII").size >= 1 || input.count("I") >= 3
+      if input.index("M") == n || input.index("D") == n || input.index("C") == n || input.index("L") == n || input.scan("IIII").size >= 1 || input.count("I") > 3
         false
       elsif (input.index("V") == n || input.index("X") == n) && input.count("I") > 1
         false

@@ -23,7 +23,7 @@ loop do
     loop do
       puts "\nEntre com o número em algoritmos romanos:".colorize(:light_cyan)
       input = gets.chomp.upcase
-      if Conversor::Validation.valid_order(input)
+      if Conversor::Validation.valid_order(input) && Conversor::RomanDecimal.valid(input)
         output = Conversor::RomanDecimal.valid(input)
         puts "Conversão de Romano para Decimal:".colorize(:green).bold
         puts "Romano:" + input.colorize(:green)

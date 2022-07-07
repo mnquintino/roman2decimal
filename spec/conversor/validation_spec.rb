@@ -12,7 +12,7 @@ module Conversor
         end
       end
       context 'when a wrong input is taken' do
-        let(:input) { "MCMM" }
+        let(:input) { "IXV" }
         subject { Validation.valid_order(input) }
 
         it 'returns false' do

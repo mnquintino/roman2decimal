@@ -1,0 +1,37 @@
+Código:
+Transformar o código numa gem ficou bem organizado.
+Toda a lógica foi implementada, não foi usada nenhuma gem externa (pra lógica).
+A utilização da gem tá bem fluida, não tem nada confuso, tudo bem explicado.
+Adorei a personalização do console com o colorize.
+(minor) ao invés no "== nil" poderia ter sido ".nil?".
+A mistura de português e inglês no código ficou confuso em alguns momentos (ex.: Conversor.main_method)
+O ideal seria não ter nada em português no código, 100% inglês igual na Qulture e na comunidade open source.
+(Minor) poderia usar o "class << self" após o nome da classe ao invés do ".self" antes de todos os métodos.
+O ideal seria ter constantes para representar os algorismos romanos pra melhorar a legibilidade, ex: THOUSAND = "M", HUNDRED = "C", etc.
+Parece um pouco inevitável fugir dos if-else statement, no escopo desse projeto eu acho bom utilizar, é um escopo limitado e que não vai crescer, mas em casos de escalamento rápido, existem outras alternativas pra não ter uma lógica bagunçada (https://medium.com/swlh/stop-using-if-else-statements-f4d2323e6e4).
+O teste de decimal_roman só tem 1 spec, o ideal seria ter todos os exemplos dados na documentação.
+O teste roman_decimal ta bem legal na partes dos válidos, mas os inválidos também devem ser testados.
+Os testes estão bem organizados seguindo a árvore do rspec, com describe, context e its.
+(minor) pode usar o described_class nos subjects.
+Bom uso do truthy e do falsey nos testes do Validation, poderia ter mais casos também.
+Constantes bem utilizadas no RomanDecimal para validação, poderia ter usado no .create_roman também.
+Adorei a class History, funcionou muito bem e melhora bastante a experiência do usuário.
+
+Documentação:
+A documentação está excelente, explicou as regras, a base, o maior e menor número, a ordem, instruções de instalação, link da ideia do projeto original, e user stories, muito completo.
+
+
+Mensagens:
+Na mensagem de retorno quando um número é inválido, o ideal seria retornar "inválido" e não "false".
+(bem minor) quando retornar entrada inválida, o ideal seria que ficasse vermelho igual "Poxa, o valor está incorreto. Tente novamente".
+
+Testes:
+ROMAN:
+O III não funciona.
+O VIII não funciona.
+O CD não funciona.
+
+Todos os outros casos que testei funcionou.
+
+DECIMAL:
+Todos os casos funcionaram corretamente.
